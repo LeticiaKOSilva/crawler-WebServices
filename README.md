@@ -17,9 +17,38 @@ cada um e armazenados em um arquivo .csv.<br>Depois se criará um código de bus
     - Modalidade;
     - Número;
     - Ano;
-    - Situação
-    - Link direto para o PDF
+    - Situação;
+    - Link direto para o PDF.
 - Em seguida com os dados retornados do método acima em um dicionário, invocaremos o método static <b>"persistir_em_csv"</b> que vai receber os dados e o nome do arquivo e assim armazenar os dados nesse arquivo .csv.
 
 ##  busca (em modo texto)
+- Criaçaõ de um arquivo chamado search_edital.py que irá realizar toda a busca em modo texto realizado pelo usuário;
+- Primeiro será feita a manipulação das informações que o usuário poderá pesquisar, que são:
+  - Termo de busca: a ser pesquisado nos títulos;
+  - Filtro de modalidade;
+  - Filtro de número;
+  - Filtro de ano;
+  - Filtro de situação.
+- Por fim faremos algumas alterações para que a entrada e saída de dados seja como no exemplo abaixo:
+  - <b>ENTRADA</b><br>
+      #Busca editais com o termo "informática"<br>
+      python3 busca_edital.py informática
+  - <b>SAÍDA</b><br>
+      Termo de busca: "informática"<br>
+      Filtros:<br>
+          ano: 2021<br>
+          modalidade: extensão<br>
+          Tempo de resposta: 400ms
+
+        2 resultados
+        ------------
+            Edital 54/2023: Edital de chamada para submissão de resumos para a Semana Acadêmica do Curso de Licenciatura em Educação Física do IF Sudeste MG - Campus Barbacena
+            Link: https://www.ifsudestemg.edu.br/editais/barbacena/ensino/edital-54-2023-edital-de-chamada-para-submissao-de-resumos-para-a-semana-academica-do-curso-de-licenciatura-em-             educacao-fisica-do-if-sudeste-mg-campus-barbacena/edital-54.pdf
+
+            2023/52: 1° Festival de Música do IF Sudeste MG – IFestival 2023
+            Link: https://www.ifsudestemg.edu.br/editais/barbacena/extensao/2023/edital-ndeg-52-1deg-festival-de-musica-do-if-sudeste-mg-2013-ifestival-2023/edital-inscricoes-                        ifestival.pdf
+
+
+
+ 
 
